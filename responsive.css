@@ -15,7 +15,7 @@
     }
 
     .barre-gauche {
-        width: 80%;
+        width: 100%;
         /* Réduire la largeur */
         max-width: 300px;
         /* Limiter la taille */
