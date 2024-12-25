@@ -4,6 +4,7 @@
 /* Responsive styles for all devices */
 
 /* Responsive design for mobile devices */
+/* Responsive design for mobile devices */
 @media only screen and (max-width: 768px) {
     body {
         font-family: Arial, sans-serif;
@@ -18,17 +19,16 @@
     }
 
     .barre-gauche {
-        width: 100vw;
-        /* Utiliser 100% de la largeur de la fenêtre */
-        height: 100vh;
-        /* S'assurer qu'elle occupe toute la hauteur de l'écran */
-        margin: 0;
-        padding: 15px;
+        width: 100vw;  /* Take full viewport width */
+        height: 100vh; /* Take full viewport height */
+        margin: 0;     /* No margin */
+        padding: 0;    /* Remove padding */
         background-color: rgba(0, 0, 0, 0.8);
-        border-radius: 0;
-        /* Enlever les coins arrondis pour toute la largeur */
-        box-shadow: none;
-        /* Pas d'ombre */
+        border-radius: 0;  /* Remove border-radius for full-screen effect */
+        box-shadow: none;  /* No shadow */
+        position: fixed;   /* Make it fixed to take full screen */
+        top: 0;
+        left: 0;
     }
 
     .barre-gauche button {
@@ -105,8 +105,7 @@
     .spacer {
         margin: 20px 0;
     }
-    }
-
+}
 
     /* Tablets (portrait and landscape) */
     @media only screen and (min-width: 769px) and (max-width: 1024px) {
