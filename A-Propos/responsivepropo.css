@@ -1,0 +1,131 @@
+/* Styles de base */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    box-sizing: border-box;
+  }
+  
+  /* Conteneur principal pour les rectangles */
+  .contenaire {
+    display: flex;
+    flex-wrap: wrap; /* Permet le retour à la ligne si nécessaire */
+    justify-content: space-between;
+    gap: 20px; /* Espacement entre les rectangles */
+    padding: 20px;
+  }
+  
+  /* Style des rectangles */
+  .contenaire > div {
+    flex: 1 1 calc(50% - 20px); /* Deux rectangles côte à côte avec un espacement */
+    
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour un effet visuel */
+    box-sizing: border-box;
+  }
+  
+  /* Mobile (up to 768px) */
+  @media (max-width: 768px) {
+    .contenaire {
+      padding: 10px;
+    }
+  
+    .contenaire > div {
+      flex: 1 1 100%; /* Les rectangles occupent toute la largeur */
+      margin-bottom: 10px;
+    }
+  
+    .Titre h1 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  
+    .moi h1 {
+      font-size: 1.2rem;
+    }
+  
+    .moi p {
+      font-size: 1rem;
+      text-align: justify;
+    }
+  }
+  
+  /* Tablet (768px to 1024px) */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .contenaire > div {
+      flex: 1 1 calc(50% - 10px); /* Les rectangles restent côte à côte */
+    }
+  
+    .Titre h1 {
+      font-size: 2rem;
+      text-align: center;
+    }
+  
+    .moi h1 {
+      font-size: 1.5rem;
+    }
+  
+    .moi p {
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* PC (1024px to 1920px) */
+  @media (min-width: 1024px) and (max-width: 1920px) {
+    .contenaire {
+      max-width: 1200px;
+      margin: 0 auto; /* Centre le contenu */
+    }
+  
+    .contenaire > div {
+      flex: 1 1 calc(50% - 20px); /* Deux rectangles côte à côte */
+    }
+  
+    .Titre h1 {
+      font-size: 2.5rem;
+    }
+  
+    .moi h1 {
+      font-size: 2rem;
+    }
+  
+    .moi p {
+      font-size: 1.4rem;
+    }
+  }
+  
+  /* TV (above 1920px) */
+  @media (min-width: 1920px) {
+    .contenaire {
+      max-width: 1600px;
+      margin: 0 auto;
+      gap: 30px; /* Espacement plus grand entre les rectangles */
+    }
+  
+    .contenaire > div {
+      flex: 1 1 calc(50% - 30px); /* Ajustement pour les grands écrans */
+    }
+  
+    .Titre h1 {
+      font-size: 3rem;
+      text-align: center;
+    }
+  
+    .moi h1 {
+      font-size: 2.5rem;
+    }
+  
+    .moi p {
+      font-size: 1.6rem;
+    }
+  
+    body {
+      font-size: 1.2rem; /* Texte légèrement plus grand */
+    }
+  }
+  
