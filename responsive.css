@@ -1,10 +1,6 @@
 /* Responsive styles for all devices */
 
 /* Responsive design for mobile devices */
-/* Responsive styles for all devices */
-
-/* Responsive design for mobile devices */
-/* Responsive design for mobile devices */
 @media only screen and (max-width: 768px) {
     body {
         font-family: Arial, sans-serif;
@@ -18,19 +14,20 @@
         min-height: 100vh;
     }
 
-.barre-gauche {
-    width: 100vw; /* Occupe 100% de la largeur de l'écran */
-    height: 100vh; /* Occupe 100% de la hauteur de l'écran */
-    margin: 0; /* Enlever toute marge */
-    padding: 0; /* Enlever tout padding */
-    background-color: rgba(0, 0, 0, 0.8); /* Couleur de fond */
-    border-radius: 0; /* Supprime les coins arrondis */
-    box-shadow: none; /* Pas d'ombres */
-    display: flex;
-    flex-direction: column; /* Organise les éléments verticalement */
-    align-items: center; /* Centre les éléments horizontalement */
-    justify-content: center; /* Centre les éléments verticalement */
-}
+    .barre-gauche {
+        width: 100vw; /* Occupe 100% de la largeur de l'écran */
+        height: 100vh; /* Occupe 100% de la hauteur de l'écran */
+        margin: 0; /* Enlever toute marge */
+        padding: 0; /* Enlever tout padding */
+        background-color: rgba(0, 0, 0, 0.8); /* Couleur de fond */
+        border-radius: 0; /* Supprime les coins arrondis */
+        box-shadow: none; /* Pas d'ombres */
+        display: flex;
+        flex-direction: column; /* Organise les éléments verticalement */
+        align-items: center; /* Centre les éléments horizontalement */
+        justify-content: center; /* Centre les éléments verticalement */
+    }
+    
 
     .barre-gauche button {
         width: 100%;
@@ -105,89 +102,6 @@
     /* Ajustement des espacements */
     .spacer {
         margin: 20px 0;
-    }
-}
-
-    /* Tablets (portrait and landscape) */
-    @media only screen and (min-width: 769px) and (max-width: 1024px) {
-        body {
-            font-size: 16px;
-            padding: 15px;
-        }
-
-        header {
-            flex-direction: row;
-            justify-content: space-between;
-            padding: 15px;
-        }
-
-        .barre-gauche {
-            width: 300px;
-            height: auto;
-            position: static;
-        }
-
-        nav ul {
-            flex-direction: row;
-            justify-content: space-around;
-        }
-
-        .container {
-            width: 80%;
-            margin: auto;
-        }
-
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-        }
-
-        button {
-            font-size: 1.2rem;
-            padding: 12px;
-        }
-    }
-
-    /* Desktops and larger screens */
-    @media only screen and (min-width: 1025px) {
-        body {
-            font-size: 18px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        header {
-            padding: 20px;
-        }
-
-        .barre-gauche {
-            width: 280px;
-            position: fixed;
-            left: 0;
-            top: 0;
-            height: 100vh;
-        }
-
-        nav ul {
-            flex-direction: row;
-            gap: 20px;
-        }
-
-        .container {
-            max-width: 70%;
-        }
-
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 15px;
-        }
-
-        button {
-            font-size: 1.5rem;
-            padding: 15px;
-        }
     }
     }
 
