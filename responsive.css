@@ -1,7 +1,7 @@
 /* Responsive styles for all devices */
 
 /* Responsive design for mobile devices */
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 667px) {
     body {
         font-family: Arial, sans-serif;
         margin: 0;
