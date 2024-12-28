@@ -18,18 +18,19 @@
         min-height: 100vh;
     }
 
-    .barre-gauche {
-        width: 100vw;  /* Take full viewport width */
-        height: 100vh; /* Take full viewport height */
-        margin: 0;     /* No margin */
-        padding: 0;    /* Remove padding */
-        background-color: rgba(0, 0, 0, 0.8);
-        border-radius: 0;  /* Remove border-radius for full-screen effect */
-        box-shadow: none;  /* No shadow */
-        position: fixed;   /* Make it fixed to take full screen */
-        top: 0;
-        left: 0;
-    }
+.barre-gauche {
+    width: 100vw; /* Occupe 100% de la largeur de l'écran */
+    height: 100vh; /* Occupe 100% de la hauteur de l'écran */
+    margin: 0; /* Enlever toute marge */
+    padding: 0; /* Enlever tout padding */
+    background-color: rgba(0, 0, 0, 0.8); /* Couleur de fond */
+    border-radius: 0; /* Supprime les coins arrondis */
+    box-shadow: none; /* Pas d'ombres */
+    display: flex;
+    flex-direction: column; /* Organise les éléments verticalement */
+    align-items: center; /* Centre les éléments horizontalement */
+    justify-content: center; /* Centre les éléments verticalement */
+}
 
     .barre-gauche button {
         width: 100%;
